@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #heading{
+            text-align :left;
+         
+        }
+        
+        .signup_form{
+            width: 30%;
+            padding: 2px 1px;
+            text-align: left;
+            font-family:sans-serif;
+            border: solid 1px;
+            margin: auto;
+            float: center;
+            
+     
+        }
+        .signup_form input{
+            padding: 13px 12px;
+            width: 90%;
+            border: solid 2px;
+            margin: 8px;
+        }
+        .signup_form button{
+            padding: 15px 3px;
+            margin: 0; 
+            width: 97%;
+            background-color:black;
+            color:white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .icon{
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            gap: 50px;
+            font-size: 40px;
+
+        }
+
+        .name{
+            padding: 8px 18px;
+            width: 80%;
+        }
+        .password{
+            padding: 8px 18px;
+            width: 80%;
+        }
+        .hr-lines{
+            position: relative;
+            max-width: 550px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .hr-lines:before{
+            content: " ";
+            height:  1px;
+            width: 200px;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+        .hr-lines::after{
+            content:" ";
+            height: 1px;
+            width: 200px;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0; }
+
+            .checkbox {
+                display: flex;
+                align-items: center;
+            }
+            #checkbox{
+                margin-right: 10px;
+                width: 15px;
+                font-size: 14px;
+
+            }
+            
+            #google{
+            border: none;
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            padding: 10px;
+            color:black;
+        }
+
+       #facebook{
+        font-size: 30px;
+        color:black;
+        margin-left: 50px;
+       }
+
+    </style>
+</head>
+
+    
+</style>
+<body>
+    <form action="table.html" class="signup_form">
+        <p for="already_have_an_account">Don't have an account?<a href="index.html" style="text-decoration: none;"><b>Sign up</b></a></p>
+                    
+        <h1 id="heading">Sign in</h1>
+        <label for="emai">Email</label>
+        <br>
+        <input id="email" placeholder="Enter Email Adress" type="email>"/>
+        <br>
+        <label for="password" >password</label>
+        <br>
+        <input id="password" placeholder="Enter Password" type="password"/>
+        <br>
+    
+        <input type="checkbox" id="checkbox" >
+        <label for="checkbox" id="checkbox" >I've Read And Agree With <b>The Terms Of Service</b>And Our<b>Privacy Policy</b></label>
+        
+        <br>
+        <button type="submit" id="submit_button">Sign In</button>
+        <p class="hr-lines"> Or Sign In With</p>
+        <br>
+        <div class="icon">
+            
+            <a href="https://www.google.com/"> <i id="google" class="fa-brands fa-google"></i></a>
+           <a href="https://www.facebook.com/">  <i  id="facebook" class="fa-brands fa-square-facebook"></i></a>
+        </div>  
+        
+    </form>
+    
+</body>
+</html>
